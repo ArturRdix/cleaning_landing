@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+body:has(.burger-menu.active){
+  overflow: hidden;
+}
+.wrapper {
+  max-width: 1920px;
+  margin-inline: auto;
+  overflow-x: hidden;
+
+}
+.container {
+  padding-inline: 50px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 827px){
+  .container {
+    padding-inline: 20px;
+  }
+}
